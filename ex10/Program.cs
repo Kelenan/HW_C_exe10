@@ -7,17 +7,11 @@
 Console.WriteLine("Введите трехзначное число ");
 int num = int.Parse(Console.ReadLine() ?? "");
 
-//Проверка корректности ввведеного числа ?
-if (num <= 99)
+if (num <= 99 || num >= 1000)
 {
     Console.WriteLine("Читай внимательнее, человек!");
     return; 
 }
-if (num >= 1000)
-{
-    Console.WriteLine("Читай внимательнее, человек!");
-    return; 
-} 
 
 int a1 = num / 10;
 int a2 = a1 % 10;
